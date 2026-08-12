@@ -1,0 +1,36 @@
+[package]
+name = "rs-promql2json"
+version = "0.1.0"
+edition = "2024"
+
+exclude = [
+]
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+expect_used = "forbid"
+panic = "forbid"
+
+[profile.release-wasi]
+inherits = "release"
+lto = true
+strip = true
+opt-level = 's'
+codegen-units = 1
+
+[dependencies.serde_json]
+version = "1"
+default-features = false
+features = [
+  "std",
+]
+
+[dependencies.promql-parser]
+version = "0.10"
+default-features = false
+features = [
+  "ser",
+]
