@@ -3,6 +3,13 @@ name = "rs-promql2json"
 version = "0.1.0"
 edition = "2024"
 
+description = "Converts the PromQL to a json."
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-promql2json"
+homepage = "https://github.com/takanoriyanagitani/rs-promql2json"
+documentation = "https://docs.rs/rs-promql2json/latest"
+keywords = ["promql", "prometheus", "json"]
+
 exclude = [
 ]
 
